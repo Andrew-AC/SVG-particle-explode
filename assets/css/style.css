@@ -1,0 +1,141 @@
+/*------------------------------------------------------------------
+Project:   Awesome Coding
+Version: 1.0
+
+[Table of contents]
+
+1. GENERAL CLASSES
+2. HEADER
+3. CONTENT
+5. FOOTER
+6. MEDIA QUERIES
+-------------------------------------------------------------------*/
+
+
+/* GENERAL CLASSSES */
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+body {
+	padding:0;
+	margin:0;
+
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #797a9b;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	background:#fff;
+	height: 100%;
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+h2{
+	font-size: 31px;
+}
+p{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #797a9b;
+	font-weight: 600;
+}
+/* END GENERAL CLASSES */
+/*CONTENT*/
+/* SVG AWESOME SECTION */
+#svg_awesome{
+	margin:0 auto;
+	max-width: 1400px;
+	position: relative;
+	text-align: center;
+}
+#svg_awesome .svg-container{
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+#awesome_logo {
+	max-width:1100px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+#svg_awesome .hover-svg{
+	z-index: 2;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	padding-left:55%;
+	padding-right: 5%;
+}
+#svg_awesome .hover-svg .letter{
+	height: 100%;
+	width: 11%;
+	float: left;
+}
+#svg_awesome svg rect,
+#svg_awesome svg polygon  {
+	-webkit-transition: all 500ms cubic-bezier(.17,.67,0,1.34);
+	-moz-transition: all 500ms cubic-bezier(.17,.67,0,1.34);
+	transition: all 500ms cubic-bezier(.17,.67,0,1.34);
+}
+/* END SVG AWESOME SECTION*/
+
+
+
+
+.snippet{
+	padding:0;
+	width: 100%;
+	text-align: center;
+}
+.snippet strong{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 31px;
+	line-height: 1.4;
+	margin-top: 0;
+	padding-bottom: 20px;
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+}
+/*END CONTENT*/
+
+/* FOOTER */
+footer{
+	background: radial-gradient(at center -10%, #333A56, #141933);
+	width: 100%;
+	position: absolute;
+	left:0;
+	bottom: 0;
+}
+footer::before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
+	height: 30px;
+	background: #2a79c9;
+	background: -moz-linear-gradient(left,  #2a79c9 0%, #5d3180 100%);
+	background: -webkit-linear-gradient(left,  #2a79c9 0%,#5d3180 100%);
+	background: linear-gradient(to right,  #2a79c9 0%,#5d3180 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a79c9', endColorstr='#5d3180',GradientType=1 );
+
+	-webkit-box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.9);
+	-moz-box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.9);
+	box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.9);
+}
+/* END FOOTER */
